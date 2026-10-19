@@ -1,18 +1,18 @@
 <div align="center">
 
   <!-- Cloud Border / Scallop Header -->
-  <img src="public/assets/images/baa61f6494ea9efa8b02e16efa1b0b73.svg" width="100%" height="28" alt="Cloud Scallop Banner" />
+  <img src="public/images/baa61f6494ea9efa8b02e16efa1b0b73.svg" width="100%" height="28" alt="Cloud Scallop Banner" />
 
   <br />
 
   <!-- Logo & Mascot Hero Header -->
   <a href="#readme">
-    <img src="public/assets/images/dcca05493962f89386c5ecf967cbe990.png" width="360" alt="It's Always Day One Logo" />
+    <img src="public/images/dcca05493962f89386c5ecf967cbe990.png" width="360" alt="It's Always Day One Logo" />
   </a>
 
   <br /><br />
 
-  <img src="public/assets/images/808f12872841f94ccc994cca0457c9bd.png" width="220" alt="Hanni Bunny Mascot waving hello" />
+  <img src="public/images/808f12872841f94ccc994cca0457c9bd.png" width="220" alt="Hanni Bunny Mascot waving hello" />
 
   <br />
 
@@ -46,7 +46,7 @@
     <a href="#-help-and-contact">💖 Help</a>
   </p>
 
-  <img src="public/assets/images/baa61f6494ea9efa8b02e16efa1b0b73.svg" width="100%" height="18" alt="Cloud Scallop Divider" />
+  <img src="public/images/baa61f6494ea9efa8b02e16efa1b0b73.svg" width="100%" height="18" alt="Cloud Scallop Divider" />
 
 </div>
 
@@ -236,7 +236,7 @@ Got stuck or have questions? Don't worry, the facilitators are here to help!
   <table>
     <tr>
       <td align="center" width="200">
-        <img src="public/assets/images/9fad891fec666c4c0e81ce9b00f539ab.png" width="70" alt="Facilitator Bunny" /><br />
+        <img src="public/images/9fad891fec666c4c0e81ce9b00f539ab.png" width="70" alt="Facilitator Bunny" /><br />
         <b>Facilitator</b><br />
         <a href="[email-or-social-link]">[facilitator-name]</a>
       </td>
@@ -268,7 +268,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 <div align="center">
   <br />
-  <img src="public/assets/images/baa61f6494ea9efa8b02e16efa1b0b73.svg" width="100%" height="22" alt="Cloud Scallop Footer" />
+  <img src="public/images/baa61f6494ea9efa8b02e16efa1b0b73.svg" width="100%" height="22" alt="Cloud Scallop Footer" />
   <br />
   <p align="center">
     Made with 💖, ☁️, and lots of code for <b>[event name]</b>.<br />
