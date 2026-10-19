@@ -1,26 +1,202 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #f4fafd;
+  --foreground: #0f3d5c;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4fafd;
+  color: #0f3d5c;
+  font-family: 'Nunito', 'Trebuchet MS', sans-serif;
+  overflow-x: hidden;
+}
+
+.font-fredoka {
+  font-family: 'Fredoka', 'Trebuchet MS', sans-serif;
+}
+
+.font-nunito {
+  font-family: 'Nunito', 'Trebuchet MS', sans-serif;
+}
+
+.navlink {
+  color: #0f3d5c;
+  text-decoration: none;
+  font-family: 'Fredoka', 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  transition: color 0.15s ease;
+}
+.navlink:hover {
+  color: #cf3a6a;
+}
+.navlink:focus-visible, .pill:focus-visible {
+  outline: 3px solid #cf3a6a;
+  outline-offset: 3px;
+}
+
+[data-bunny="on"], [data-bunny="on"] a, [data-bunny="on"] button {
+  cursor: none;
+}
+
+.mt {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+}
+.burger {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .hc {
+    padding: 290px 32px 60px 32px !important;
+  }
+  .sec {
+    padding: 72px 32px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .hrow {
+    height: 74px !important;
+    padding: 0 !important;
+  }
+  .hwhite {
+    height: 78px !important;
+  }
+  .hstrip {
+    top: 68px !important;
+    height: 96px !important;
+    background-size: 650px 96px !important;
+  }
+  .burger {
+    display: flex;
+    position: absolute;
+    right: 5%;
+    top: 37px;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+    background: #0f3d5c;
+    border: 2px solid #7a2e57;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 12;
+  }
+  .burger span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+  }
+  .hnav {
+    display: none !important;
+  }
+  .mt:checked ~ .hnav {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    position: absolute !important;
+    left: 12px !important;
+    right: 12px !important;
+    top: 100% !important;
+    margin-top: 94px !important;
+    padding: 8px !important;
+    background: #fff;
+    border: 3px solid #7a2e57;
+    border-radius: 16px;
+    z-index: 30;
+  }
+  .hlogo {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%);
+  }
+  .himg {
+    height: 56px !important;
+  }
+  .hc {
+    padding-top: 200px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .himg {
+    height: 46px !important;
+  }
+  .burger {
+    width: 34px;
+    height: 34px;
+    gap: 4px;
+    border-radius: 10px;
+  }
+  .burger span {
+    width: 18px;
+  }
+  .hero {
+    min-height: 0 !important;
+  }
+  .hc {
+    padding: 250px 18px 40px 18px !important;
+  }
+  .hcard {
+    position: relative !important;
+    z-index: 2 !important;
+    padding: 22px !important;
+    border-radius: 24px !important;
+    background: rgba(255, 255, 255, 0.97) !important;
+  }
+  .hbun {
+    position: absolute !important;
+    right: 2px !important;
+    top: 174px !important;
+    transform: rotate(11deg) !important;
+    transform-origin: 50% 48% !important;
+    width: 150px !important;
+    height: auto !important;
+    margin: 0 !important;
+    z-index: 1 !important;
+    clip-path: inset(0 0 52% 0) !important;
+    filter: drop-shadow(3px 4px 3px rgba(35, 70, 125, 0.35)) !important;
+  }
+  .sec {
+    padding: 56px 18px !important;
+  }
+  .h2 {
+    font-size: 30px !important;
+  }
+  .g {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 20px !important;
+  }
+  .fin {
+    padding: 100px 18px 22px 18px !important;
+    justify-content: center !important;
+  }
+  .fl {
+    justify-content: center !important;
+  }
+}
+
+@media (pointer: coarse) {
+  .bhead, .bcv {
+    display: none !important;
+  }
+  [data-bunny="on"], [data-bunny="on"] a, [data-bunny="on"] button {
+    cursor: auto !important;
+  }
 }
