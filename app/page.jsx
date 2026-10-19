@@ -1,14 +1,14 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
-import Header from './components/Header';
-import Intro from './components/Intro';
-import AboutMe from './components/AboutMe';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import EducationExperience from './components/EducationExperience';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Header from './components/header';
+import Intro from './components/intro';
+import AboutMe from './components/aboutMe';
+import Skills from './components/skills';
+import Projects from './components/projects';
+import EducationExperience from './components/educationExperience';
+import Contact from './components/contact';
+import Footer from './components/footer';
 
 /**
  * PortfolioPage — Main page component
