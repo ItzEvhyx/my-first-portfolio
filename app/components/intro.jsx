@@ -1,3 +1,4 @@
+import { intro } from '../../content/intro';
 import React from 'react';
 
 /**
@@ -20,7 +21,7 @@ export default function Intro() {
     >
       {/* ✏️ EDIT THIS — Replace with your own hero background image */}
       <img
-        src="/assets/images/2d72006bf90372214a62df811dc74063.jpg"
+        src={intro.backgroundImage}
         alt=""
         style={{
           position: 'absolute',
@@ -66,22 +67,20 @@ export default function Intro() {
           <p style={{ margin: '0 0 8px 0', fontFamily: "'Fredoka', 'Trebuchet MS', sans-serif", fontWeight: 600, fontSize: '14px', letterSpacing: '0.14em', color: '#a82c54' }}>HELLO, I&apos;M</p>
 
           {/* ✏️ EDIT THIS — Your full name */}
-          <h1 style={{ margin: '0 0 12px 0', fontFamily: "'Fredoka', 'Trebuchet MS', sans-serif", fontWeight: 600, fontSize: 'clamp(36px, 5vw, 58px)', lineHeight: 1.05 }}>Hanni Bunny</h1>
+          <h1 style={{ margin: '0 0 12px 0', fontFamily: "'Fredoka', 'Trebuchet MS', sans-serif", fontWeight: 600, fontSize: 'clamp(36px, 5vw, 58px)', lineHeight: 1.05 }}>{intro.name}</h1>
 
           {/* ✏️ EDIT THIS — Your job title / role */}
-          <p style={{ margin: '0 0 16px 0', display: 'inline-block', padding: '6px 18px', borderRadius: '999px', background: '#cf3a6a', color: '#ffffff', fontFamily: "'Fredoka', 'Trebuchet MS', sans-serif", fontWeight: 500, fontSize: '20px' }}>UI/UX Designer</p>
+          <p style={{ margin: '0 0 16px 0', display: 'inline-block', padding: '6px 18px', borderRadius: '999px', background: '#cf3a6a', color: '#ffffff', fontFamily: "'Fredoka', 'Trebuchet MS', sans-serif", fontWeight: 500, fontSize: '20px' }}>{intro.role}</p>
 
           {/* ✏️ EDIT THIS — Your one-line tagline */}
-          <p style={{ margin: '0 0 8px 0', fontFamily: "'Fredoka', 'Trebuchet MS', sans-serif", fontWeight: 500, fontSize: '22px' }}>I design interfaces that feel like day one, every day.</p>
+          <p style={{ margin: '0 0 8px 0', fontFamily: "'Fredoka', 'Trebuchet MS', sans-serif", fontWeight: 500, fontSize: '22px' }}>{intro.tagline}</p>
 
           {/* ✏️ EDIT THIS — Your short bio paragraph */}
-          <p style={{ margin: '0 0 20px 0', fontSize: '18px', lineHeight: 1.5 }}>Five years of turning confusing screens into cozy, accessible experiences, with a soft spot for pixel art, playful motion and design systems that people actually enjoy using.</p>
+          <p style={{ margin: '0 0 20px 0', fontSize: '18px', lineHeight: 1.5 }}>{intro.bio}</p>
 
           {/* ✏️ EDIT THIS — Your quick-info tags (location, availability, skills) */}
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginBottom: '24px' }}>
-            <span style={{ padding: '4px 14px', borderRadius: '999px', background: '#ffe3ee', border: '2px solid #7a2e57', fontSize: '15px', fontWeight: 700 }}>Based in Cloud City</span>
-            <span style={{ padding: '4px 14px', borderRadius: '999px', background: '#ffe3ee', border: '2px solid #7a2e57', fontSize: '15px', fontWeight: 700 }}>Open to freelance</span>
-            <span style={{ padding: '4px 14px', borderRadius: '999px', background: '#ffe3ee', border: '2px solid #7a2e57', fontSize: '15px', fontWeight: 700 }}>Figma · Prototyping · Research</span>
+            {intro.tags.map((tag, index) => <span key={index} style={{ padding: '4px 14px', borderRadius: '999px', background: '#ffe3ee', border: '2px solid #7a2e57', fontSize: '15px', fontWeight: 700 }}>{tag}</span>)}
           </div>
 
           {/* ✏️ EDIT THIS — CTA button labels and links */}
@@ -91,8 +90,8 @@ export default function Intro() {
           </div>
         </div>
 
-        {/* ✏️ EDIT THIS — Replace with your own mascot/avatar image */}
-        <img src="/assets/images/808f12872841f94ccc994cca0457c9bd.png" alt="Hanni the bunny mascot waving a hello" className="hbun" style={{ flex: '0 1 auto', width: 'min(100%, 400px)', height: 'auto', display: 'block', filter: 'drop-shadow(10px 16px 8px rgba(35,70,125,0.4))' }} />
+        {/* Hanni is a fixed part of the portfolio design. */}
+        <img src="/assets/images/808f12872841f94ccc994cca0457c9bd.png" alt="Hanni the bunny mascot waving hello" className="hbun" style={{ flex: '0 1 auto', width: 'min(100%, 400px)', height: 'auto', display: 'block', filter: 'drop-shadow(10px 16px 8px rgba(35,70,125,0.4))' }} />
       </div>
     </div>
   );

@@ -1,3 +1,5 @@
+import { educationSection } from '../../content/education';
+import { education, experience, certifications } from '../../content/education';
 import React from 'react';
 
 /**
@@ -20,30 +22,21 @@ const TimelineItem = ({ date, title, org, desc }) => (
 
 export default function EducationExperience() {
   /* ✏️ EDIT THIS — Your education entries */
-  const education = [
-    { date: '2019 - 2023', title: 'BS in Interactive Design', org: 'Cloud City University', desc: "Dean's lister and president of the UI Design Club." },
-    { date: '2026', title: 'AWS Learning Club', org: 'Member', desc: 'Workshop on building and deploying a portfolio with GitHub and Vercel.' },
-  ];
+
 
   /* ✏️ EDIT THIS — Your work experience entries */
-  const experience = [
-    { date: '2024 - Present', title: 'Junior UI/UX Designer', org: 'StarHop Labs', desc: 'Design three product flows and maintain the shared component library.' },
-    { date: '2023 - 2024', title: 'UI/UX Design Intern', org: 'Moonlight Studio', desc: 'Designed 20+ screens and ran 8 usability sessions.' },
-  ];
+
 
   /* ✏️ EDIT THIS — Your certifications */
-  const certifications = [
-    { title: 'UX Research Basics', detail: 'Cloud Design Academy - 2024' },
-    { title: 'Accessible Design Essentials', detail: 'Open Design School - 2025' },
-  ];
+
 
   return (
     <div id="education" style={{ position: 'relative' }}>
       <div className="sec" style={{ position: 'relative', boxSizing: 'border-box', maxWidth: '1220px', margin: '0 auto', padding: '96px 48px' }}>
         <div style={{ maxWidth: '640px', marginBottom: '48px' }}>
           {/* ✏️ EDIT THIS — Section title and subtitle */}
-          <h2 className="h2" style={{ margin: '0 0 12px 0', fontFamily: "'Fredoka', 'Trebuchet MS', sans-serif", fontWeight: 600, fontSize: '40px' }}>Education &amp; Experience</h2>
-          <p style={{ margin: 0, fontSize: '18px', lineHeight: 1.5, color: '#3d6a85' }}>Where I have studied and what I have made so far.</p>
+          <h2 className="h2" style={{ margin: '0 0 12px 0', fontFamily: "'Fredoka', 'Trebuchet MS', sans-serif", fontWeight: 600, fontSize: '40px' }}>{educationSection.title}</h2>
+          <p style={{ margin: 0, fontSize: '18px', lineHeight: 1.5, color: '#3d6a85' }}>{educationSection.subtitle}</p>
         </div>
         <div className="g" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '48px' }}>
           {/* Education column */}

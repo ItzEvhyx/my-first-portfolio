@@ -1,3 +1,5 @@
+import { intro } from '../../content/intro';
+import { socials } from '../../content/footer';
 import React from 'react';
 
 /**
@@ -12,12 +14,7 @@ export default function Footer() {
    *  Each entry = { label, href, pixelIcon, iconColor }
    *  - pixelIcon: id of the SVG symbol defined in page.jsx (#px-star, #px-heart, etc.)
    */
-  const socials = [
-    { label: 'GitHub', href: '#', pixelIcon: '#px-star', iconColor: '#ffb33d' },
-    { label: 'LinkedIn', href: '#', pixelIcon: '#px-heart', iconColor: '#4aa8ff' },
-    { label: 'Facebook', href: '#', pixelIcon: '#px-heart', iconColor: '#9b6bd9' },
-    { label: 'Instagram', href: '#', pixelIcon: '#px-star', iconColor: '#ff5fb0' },
-  ];
+
 
   const socialButtonStyle = {
     display: 'inline-flex',
@@ -111,7 +108,7 @@ export default function Footer() {
         </div>
         <div style={{ flex: '1 1 380px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '14px' }}>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px' }}>
-            {socials.map((s) => (
+            {socials.filter((s) => s.href).map((s) => (
               <a key={s.label} href={s.href} style={socialButtonStyle}>
                 <svg width="16" height="16" aria-hidden="true">
                   <use href={s.pixelIcon} width="16" height="14" fill={s.iconColor}></use>
@@ -132,7 +129,7 @@ export default function Footer() {
               fontSize: '15px',
             }}
           >
-            © 2026 Hanni Bunny. All rights reserved.
+            © {new Date().getFullYear()} {intro.name}. All rights reserved.
           </p>
         </div>
       </div>

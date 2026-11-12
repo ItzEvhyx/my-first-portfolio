@@ -200,3 +200,7 @@ body {
     cursor: auto !important;
   }
 }
+
+/* Keep user-provided words and links inside their cards on small screens. */
+.sec, .sec * { overflow-wrap: anywhere; }
+.sec .g > * { min-width: 0; }

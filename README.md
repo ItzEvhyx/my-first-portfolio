@@ -27,7 +27,7 @@
 
   <!-- Badges -->
   <p align="center">
-    <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-15-cf3a6a?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" /></a>
+    <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-16-cf3a6a?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" /></a>
     <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19-68d2f0?style=for-the-badge&logo=react&logoColor=0f3d5c" alt="React" /></a>
     <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-v4-7a2e57?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" /></a>
     <a href="https://vercel.com/"><img src="https://img.shields.io/badge/Deploy-Vercel-cf3a6a?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" /></a>
@@ -57,7 +57,7 @@
 > **Welcome, builders & creators!** 🎀  
 > This is a starter template for building your very first personal portfolio website with **Next.js**, **React**, and **Tailwind CSS**. It is specially created for **[target audience, e.g. first-year students]** attending **[event name]** hosted by **[organization name]**.
 
-You **don't** need any prior web development experience! The project is split into clean, single-purpose components under `app/components/`. Every spot you need to customize is clearly tagged with a **`✏️ EDIT THIS`** comment so you can personalize your portfolio with zero guesswork.
+You **don't** need any prior web development experience! The project is split into clean, single-purpose components under `app/components/`. Edit the beginner-friendly files in `content/` to personalize each section.
 
 <div align="center">
   <table>
@@ -133,59 +133,52 @@ npm run dev
 
 ### 5️⃣ Open Your Browser
 Navigate to **[http://localhost:3000](http://localhost:3000)**.  
-Open the project in VS Code, edit any component file, save it, and watch your changes update instantly with Fast Refresh! ✨
+Open the project in VS Code, edit a file in `content/`, save it, and watch your changes update instantly with Fast Refresh! ✨
 
 ---
 
-## 📂 Component Guide & Folder Structure
+## ✏️ Personalize your portfolio
 
-All section components live in `app/components/` with camelCase filenames. Look for the **`✏️ EDIT THIS`** comments inside each file!
+Edit the files in `content/`. The components in `app/components/` build the page from that content; you do not need to edit JSX for the workshop.
 
-```
-[repo-name]/
-├── app/
-│   ├── layout.jsx                # Global HTML shell & font definitions
-│   ├── page.jsx                  # Main page composer (imports sections & bunny cursor)
-│   ├── globals.css               # Global theme styles & animations
-│   └── components/
-│       ├── header.jsx            # ✏️ Top navigation bar, links, and logo
-│       ├── intro.jsx             # ✏️ Hero card, greeting, name, role, bio, CTA & mascot
-│       ├── aboutMe.jsx           # ✏️ Personal background & highlight cards
-│       ├── skills.jsx            # ✏️ Categorized skill badges & tool icons
-│       ├── projects.jsx          # ✏️ Project showcase cards with links & tags
-│       ├── educationExperience.jsx # ✏️ Education & experience timeline entries
-│       ├── contact.jsx           # ✏️ Contact form, email, and social profiles
-│       └── footer.jsx            # ✏️ Cloud footer, social links, and copyright
-├── public/
-│   ├── assets/
-│   │   ├── fonts/                # Fredoka & Nunito custom fonts
-│   │   └── images/               # Symlink to images directory
-│   ├── images/                   # Bunny mascot, logo, banners, and project photos
-│   └── js/
-│       └── script.js             # Optional vanilla JavaScript scripts
-├── package.json
-└── README.md
+| File | What to change |
+| --- | --- |
+| `content/intro.js` | Your name, role, introduction, tags and background image |
+| `content/about.js` | Background, interests, goals and highlights |
+| `content/skills.js` | Categories, skills, descriptions and icons |
+| `content/projects.js` | Project details, colors, icons and links |
+| `content/education.js` | Education, experience and certifications |
+| `content/contact.js` | Email, GitHub and LinkedIn links |
+| `content/footer.js` | Footer social links; leave a URL empty to hide it |
+
+### Add a skill
+
+In `content/skills.js`, copy a line inside a category's `skills` list, paste it underneath, and change its values. Keep the braces, quotes and comma:
+
+```js
+{ name: 'Canva', desc: 'I create posters and presentations.', icon: 'design' },
 ```
 
-### ✏️ Where Do I Edit My Info?
+Start the site and visit [http://localhost:3000/icons](http://localhost:3000/icons) to see available icon names. The icons are general symbols, rather than brand logos. Unknown names show a fallback icon and a development warning. For a balanced layout, aim for up to four categories, six skills per category and descriptions under 100 characters. The page shows tips during development if these suggestions are exceeded; it does not remove your content.
 
-| Section Component | File Path | What You Can Customize |
-|:---|:---|:---|
-| **Header** | [`app/components/header.jsx`](app/components/header.jsx) | Navigation links, brand logo image |
-| **Intro / Hero** | [`app/components/intro.jsx`](app/components/intro.jsx) | Name, role badge, bio paragraph, quick tags, mascot image |
-| **About Me** | [`app/components/aboutMe.jsx`](app/components/aboutMe.jsx) | Personal bio, highlight cards (years of experience, interests) |
-| **Skills** | [`app/components/skills.jsx`](app/components/skills.jsx) | Technical skills, design tools, frameworks, proficiency categories |
-| **Projects** | [`app/components/projects.jsx`](app/components/projects.jsx) | Project titles, descriptions, live demo links, GitHub links, tags |
-| **Education & Exp** | [`app/components/educationExperience.jsx`](app/components/educationExperience.jsx) | Degree, school, past roles, dates, milestones |
-| **Contact** | [`app/components/contact.jsx`](app/components/contact.jsx) | Email address, LinkedIn, GitHub, form action |
-| **Footer** | [`app/components/footer.jsx`](app/components/footer.jsx) | Social links array, copyright notice, footer mascot |
+For projects, the available colors are `blue`, `pink`, and `green`; icons are `star`, `heart`, and `plus`. Leave a project link as `''` to hide its button. Include `https://` in website links. Place your images inside `public/images/` and use paths such as `/images/my-photo.png`.
 
----
+### Troubleshooting editing mistakes
 
-## 📖 Full Participant Guide
+Save after each small edit and check the browser. Keep quotes around text and the commas between entries. If a sentence contains an apostrophe, use double quotes around it (for example, `"I'm learning"`). If you see a syntax error, check the line mentioned and the line above it. Use your editor's undo action to recover your last working version. Do not share private contact details or secrets in a public repository.
 
-Need detailed, step-by-step instructions for the workshop?  
-👉 **[Read the Full Participant Guide]([link-to-participant-guide])**
+### Save your work to GitHub
+
+Use **your own repository's URL** when cloning, then make and push commits:
+
+```bash
+git status
+git add .
+git commit -m "Personalize my portfolio"
+git push origin main
+```
+
+Run `git remote -v` to check that `origin` contains your GitHub username. Changes appear on GitHub after you commit and push.
 
 ---
 
