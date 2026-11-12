@@ -34,237 +34,165 @@
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-0f3d5c?style=for-the-badge" alt="MIT License" /></a>
   </p>
 
-  <!-- Navigation Bar -->
-  <p align="center">
-    <a href="#-about-this-repository">🌸 About</a> •
-    <a href="#-learning-goals">🎯 Goals</a> •
-    <a href="#-prerequisites">📋 Prerequisites</a> •
-    <a href="#-quick-start">🚀 Quick Start</a> •
-    <a href="#-component-guide--folder-structure">📂 Components</a> •
-    <a href="#-deploy-with-vercel">☁️ Deploy</a> •
-    <a href="#-submission-instructions">📬 Submission</a> •
-    <a href="#-help-and-contact">💖 Help</a>
-  </p>
-
-  <img src="public/images/baa61f6494ea9efa8b02e16efa1b0b73.svg" width="100%" height="18" alt="Cloud Scallop Divider" />
-
 </div>
 
-<br />
+## Welcome! 🌸
 
-## 🌸 About This Repository
+Create a portfolio while learning how Git and GitHub work. You will create your own copy of this starter, edit its content, run it locally, and push your changes to your own repository. No React experience is required.
 
-> **Welcome, builders & creators!** 🎀  
-> This is a starter template for building your very first personal portfolio website with **Next.js**, **React**, and **Tailwind CSS**. It is specially created for **[target audience, e.g. first-year students]** attending **[event name]** hosted by **[organization name]**.
+**Your workflow:** create your repository from the template → clone your repository → edit and preview → commit → push → optionally deploy.
 
-You **don't** need any prior web development experience! The project is split into clean, single-purpose components under `app/components/`. Edit the beginner-friendly files in `content/` to personalize each section.
+## Before you begin
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center"><b>🎨 Powerpuff Aesthetic</b><br/>Playful, retro-modern visuals with custom pixel cursors, cloud scallops, and pastel highlights.</td>
-      <td align="center"><b>🧩 Modular Components</b><br/>Separation of concerns: every page section lives in its own dedicated, easy-to-edit file.</td>
-      <td align="center"><b>⚡ Ready for Deploy</b><br/>Pre-configured for instant zero-configuration publishing on Vercel with automatic CI/CD.</td>
-    </tr>
-  </table>
-</div>
+- A [GitHub account](https://github.com/).
+- [Git](https://git-scm.com/) installed. Check with `git --version`.
+- [Node.js](https://nodejs.org/) **20.9 or later** and npm. Check with `node --version` and `npm --version`.
+- A code editor such as [VS Code](https://code.visualstudio.com/).
+- A [Vercel account](https://vercel.com/) linked to GitHub if you plan to deploy.
 
----
+## 1. Create your own repository
 
-## 🎯 Learning Goals
+1. Sign in to GitHub and open the [starter repository](https://github.com/ItzEvhyx/my-first-portfolio).
+2. Select **Use this template** → **Create a new repository**.
+3. Choose your GitHub account as the owner, choose a name such as `my-portfolio`, and create the repository.
+4. You should now be on a repository whose URL starts with `github.com/YOUR-USERNAME/`.
 
-By the end of this workshop, you will be able to:
+Your repository is your own copy. Your changes and pushes will not change the starter. If **Use this template** is missing, ask a facilitator for help.
 
-<table>
-  <tr>
-    <td width="50" align="center">🌸</td>
-    <td><b>Build a Modern Multi-Section Website:</b> Understand the basics of React components, JSX syntax, and responsive layouts.</td>
-  </tr>
-  <tr>
-    <td width="50" align="center">💙</td>
-    <td><b>Version Control with Git & GitHub:</b> Clone, edit, commit, and push your changes to your own public GitHub repository.</td>
-  </tr>
-  <tr>
-    <td width="50" align="center">💚</td>
-    <td><b>Deploy to the World with Vercel:</b> Connect your repository to Vercel and publish a live <code>.vercel.app</code> website.</td>
-  </tr>
-  <tr>
-    <td width="50" align="center">⭐</td>
-    <td><b>[Learning goal 4]:</b> Showcase your own personal projects, skills, education, and social links to recruiters and peers.</td>
-  </tr>
-</table>
+## 2. Clone your repository
 
----
+On **your new repository**, click **Code** and copy the HTTPS URL. Open a terminal and replace the example URL and folder name below with your own:
 
-## 📋 Prerequisites
-
-Before the event begins, please make sure you have the following ready:
-
-- [ ] 🐙 **[GitHub Account](https://github.com/)** — to save, manage, and share your code
-- [ ] ▲ **[Vercel Account](https://vercel.com/)** — sign up with your GitHub account for 1-click deployments
-- [ ] 🌿 **[Git Installed](https://git-scm.com/)** — command-line version control tool
-- [ ] 🟢 **[Node.js (v20 or newer)](https://nodejs.org/)** — the JavaScript runtime that powers the dev server
-- [ ] 💻 **[VS Code](https://code.visualstudio.com/)** (or your favorite code editor)
-
----
-
-## 🚀 Quick Start
-
-Get your portfolio running locally on your computer in just a few minutes!
-
-### 1️⃣ Use This Template
-Click the green **"Use this template"** button at the top of this repository on GitHub, then select **"Create a new repository"**. Name it something cute like `my-portfolio`!
-
-### 2️⃣ Clone Your New Repository
 ```bash
-git clone https://github.com/[your-username]/[your-repo-name].git
-cd [your-repo-name]
+git clone https://github.com/YOUR-USERNAME/my-portfolio.git
+cd my-portfolio
 ```
 
-### 3️⃣ Install Dependencies
+Cloning downloads your files and connects the folder to your GitHub repository. You do not need `git init` or `git remote add origin`.
+
+Check the connection:
+
+```bash
+git remote -v
+```
+
+The `origin` URLs should contain **your username**. If they contain `ItzEvhyx`, you cloned the starter instead; ask a facilitator for help.
+
+## 3. Install and run
+
+From inside the project folder, run:
+
 ```bash
 npm install
-```
-
-### 4️⃣ Start the Development Server
-```bash
 npm run dev
 ```
 
-### 5️⃣ Open Your Browser
-Navigate to **[http://localhost:3000](http://localhost:3000)**.  
-Open the project in VS Code, edit a file in `content/`, save it, and watch your changes update instantly with Fast Refresh! ✨
+Open the local address shown in the terminal, usually [http://localhost:3000](http://localhost:3000). Keep this terminal running while you edit. To stop the server, press **Ctrl+C** in that terminal. Use a second terminal for Git commands.
 
----
+Open the project folder in your editor. Changes normally appear in the browser after you save the file; refresh if needed.
 
-## ✏️ Personalize your portfolio
+## 4. Personalize your portfolio ✏️
 
-Edit the files in `content/`. The components in `app/components/` build the page from that content; you do not need to edit JSX for the workshop.
+Edit the JavaScript files in `content/`. The React components in `app/components/` display that content. You do not need to edit JSX for the workshop.
 
-| File | What to change |
+| File | What to edit |
 | --- | --- |
-| `content/intro.js` | Your name, role, introduction, tags and background image |
+| `content/intro.js` | Name, role, tagline, bio, tags and background image |
 | `content/about.js` | Background, interests, goals and highlights |
-| `content/skills.js` | Categories, skills, descriptions and icons |
-| `content/projects.js` | Project details, colors, icons and links |
+| `content/skills.js` | Skill categories, names, descriptions and icons |
+| `content/projects.js` | Projects, descriptions, tags, colors, icons and project links |
 | `content/education.js` | Education, experience and certifications |
-| `content/contact.js` | Email, GitHub and LinkedIn links |
-| `content/footer.js` | Footer social links; leave a URL empty to hide it |
+| `content/contact.js` | Email and profile URLs |
+| `content/footer.js` | Footer social links |
+
+Hanni is part of the fixed design and has no editable avatar fields in `content/intro.js`. You can change the intro background: put an image in `public/images/` and use a path such as `/images/my-background.png`.
 
 ### Add a skill
 
-In `content/skills.js`, copy a line inside a category's `skills` list, paste it underneath, and change its values. Keep the braces, quotes and comma:
+In `content/skills.js`, copy an existing skill line **inside a category’s `skills` list**, paste it on a new line, and edit the text. Keep the braces, quotation marks and comma:
 
 ```js
 { name: 'Canva', desc: 'I create posters and presentations.', icon: 'design' },
 ```
 
-Start the site and visit [http://localhost:3000/icons](http://localhost:3000/icons) to see available icon names. The icons are general symbols, rather than brand logos. Unknown names show a fallback icon and a development warning. For a balanced layout, aim for up to four categories, six skills per category and descriptions under 100 characters. The page shows tips during development if these suggestions are exceeded; it does not remove your content.
+With the site running, visit [http://localhost:3000/icons](http://localhost:3000/icons) to see the available icons and their names. They are general symbols rather than brand logos. If a name is unknown, the site uses a fallback icon and displays a development tip.
 
-For projects, the available colors are `blue`, `pink`, and `green`; icons are `star`, `heart`, and `plus`. Leave a project link as `''` to hide its button. Include `https://` in website links. Place your images inside `public/images/` and use paths such as `/images/my-photo.png`.
+For a balanced layout, aim for up to four categories, six skills per category, and descriptions under 100 characters. These are **suggestions**, not enforced limits: development tips appear when exceeded, but entries are not removed.
 
-### Troubleshooting editing mistakes
+### Add a project and link
 
-Save after each small edit and check the browser. Keep quotes around text and the commas between entries. If a sentence contains an apostrophe, use double quotes around it (for example, `"I'm learning"`). If you see a syntax error, check the line mentioned and the line above it. Use your editor's undo action to recover your last working version. Do not share private contact details or secrets in a public repository.
+In `content/projects.js`, copy an existing project block and edit it, keeping the brackets, braces and commas. For example:
 
-### Save your work to GitHub
+```js
+{
+  category: 'Web',
+  title: 'My First Project',
+  description: 'A website I created to practice my skills.',
+  tags: ['HTML', 'CSS'],
+  color: 'blue',
+  icon: 'star',
+  projectUrl: 'example.com',
+},
+```
 
-Use **your own repository's URL** when cloning, then make and push commits:
+Available colors: `blue`, `pink`, `green`. Available icons: `star`, `heart`, `plus`. Enter either `example.com` or `https://example.com`; the **View Project** button opens the external website in a new tab. Leave `projectUrl` as `''` to hide the button. There is no separate demo URL field.
+
+### Update contact and social links
+
+Change `email`, `github`, and `linkedin` in `content/contact.js`. Use complete profile URLs such as `https://github.com/your-username`. The email button opens a visitor’s email app.
+
+In `content/footer.js`, add full URLs starting with `https://` to the existing social entries. Leave a footer `href` empty to hide that link. Only add contact details you are comfortable sharing publicly; never commit passwords, tokens, API keys or other secrets.
+
+## 5. Review, commit and push to GitHub
+
+Saved edits update your **local** files. They appear in GitHub only after you commit and push.
+
+Open another terminal in the project folder and review what changed:
 
 ```bash
 git status
+git diff
+```
+
+If this is your first time using Git, configure your identity using your own name and GitHub-associated email (do not type the example values literally):
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+```
+
+Then save your changes as a commit and push them to **your own** repository:
+
+```bash
 git add .
 git commit -m "Personalize my portfolio"
 git push origin main
 ```
 
-Run `git remote -v` to check that `origin` contains your GitHub username. Changes appear on GitHub after you commit and push.
+When prompted, follow GitHub’s authentication instructions. A GitHub account password is not used as a Git password for HTTPS; use the authentication method presented by your Git client or facilitator.
 
----
+Refresh your repository on GitHub to see the changes. If Git says there is nothing to commit, save your files and check `git status`. For future edits, repeat: **edit → save → review → commit → push**.
 
-## ☁️ Deploy with Vercel
+## 6. Optional: deploy your portfolio ☁️
 
-Share your portfolio with the world in less than 2 minutes!
+1. Push your latest commit to **your** GitHub repository.
+2. Sign in to [Vercel](https://vercel.com/) with GitHub and choose to add a new project.
+3. Import your portfolio repository; authorize access if asked.
+4. Review the detected Next.js settings and select **Deploy**.
+5. Once deployment finishes, open the provided public URL and test it on desktop and mobile.
 
-<div align="center">
-  <a href="https://vercel.com/new">
-    <img src="https://vercel.com/button" alt="Deploy with Vercel" />
-  </a>
-</div>
+If your connected Vercel project is configured for automatic deployments, later pushes to the connected branch create new deployments. Check the deployment status before sharing updates.
 
-<br />
+## Troubleshooting
 
-1. Push all your saved changes to your GitHub repository:
-   ```bash
-   git add .
-   git commit -m "Customize my portfolio!"
-   git push origin main
-   ```
-2. Head over to **[vercel.com/new](https://vercel.com/new)** and log in with GitHub.
-3. Find your portfolio repository and click **Import**.
-4. Keep all default build settings (Next.js is automatically detected).
-5. Click **Deploy**! 🚀
-6. In about a minute, your website will be live at `https://[your-project-name].vercel.app`!
+- **Syntax error after editing:** Check the reported line and the one above it for missing quotes, commas or brackets. Use double quotes for text containing an apostrophe, such as `"I'm learning"`. Undo the last edit if needed.
+- **Project button is missing:** Add a valid website address in `projectUrl`. An empty or invalid address hides the button.
+- **Push fails:** Check `git remote -v`, make sure you cloned your repository, and complete GitHub authentication. Ask a facilitator if you need help.
+- **Site won’t start:** Check your Node.js version, run `npm install` in the project folder, and read the terminal error.
+- **Changes do not appear:** Confirm the file is saved and the dev server is running. Refresh the page; if needed, stop and restart `npm run dev`.
 
----
+## Finish the workshop 🎉
 
-## 📬 Submission Instructions
+Check your portfolio in the browser, confirm your latest commit is visible in your own GitHub repository, and share your repository and deployed URL as instructed by your facilitators.
 
-Once your website is deployed and shining bright:
-
-1. ✅ Verify your live Vercel link opens properly and all sections look great.
-2. 📋 Copy your live deployment URL (e.g., `https://my-portfolio.vercel.app`).
-3. 📝 Submit your link through the official event form: **[Submit Your Portfolio Form]([form-link])**
-
-> [!IMPORTANT]
-> **Submission Deadline:** `[submission-deadline]`
-
----
-
-## 💖 Help and Contact
-
-Got stuck or have questions? Don't worry, the facilitators are here to help!
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" width="200">
-        <img src="public/images/9fad891fec666c4c0e81ce9b00f539ab.png" width="70" alt="Facilitator Bunny" /><br />
-        <b>Facilitator</b><br />
-        <a href="[email-or-social-link]">[facilitator-name]</a>
-      </td>
-      <td align="center" width="200">
-        🌟<br />
-        <b>Event Page</b><br />
-        <a href="[event-page-link]">[event-page-link]</a>
-      </td>
-      <td align="center" width="200">
-        💬<br />
-        <b>Community Chat</b><br />
-        <a href="[group-chat-or-discord-link]">[group-chat-or-discord-link]</a>
-      </td>
-    </tr>
-  </table>
-</div>
-
-### 📚 Helpful Documentation
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [React Documentation](https://react.dev/)
-- [Vercel Deployment Guide](https://vercel.com/docs)
-
----
-
-## 📜 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-<div align="center">
-  <br />
-  <img src="public/images/baa61f6494ea9efa8b02e16efa1b0b73.svg" width="100%" height="22" alt="Cloud Scallop Footer" />
-  <br />
-  <p align="center">
-    Made with 💖, ☁️, and lots of code for <b>[event name]</b>.<br />
-    <i>"It's always day one." ✨</i>
-  </p>
-</div>
+This project is available under the [MIT License](LICENSE).
