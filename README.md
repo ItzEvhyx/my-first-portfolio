@@ -97,7 +97,7 @@ Edit the JavaScript files in `content/`. The React components in `app/components
 
 | File | What to edit |
 | --- | --- |
-| `content/intro.js` | Name, role, tagline, bio, tags and background image |
+| `content/intro.js` | Name, role, tagline, bio and tags |
 | `content/about.js` | Background, interests, goals and highlights |
 | `content/skills.js` | Skill categories, names, descriptions and icons |
 | `content/projects.js` | Projects, descriptions, tags, colors, icons and project links |
@@ -105,7 +105,7 @@ Edit the JavaScript files in `content/`. The React components in `app/components
 | `content/contact.js` | Email and profile URLs |
 | `content/footer.js` | Footer social links |
 
-Hanni is part of the fixed design and has no editable avatar fields in `content/intro.js`. You can change the intro background: put an image in `public/images/` and use a path such as `/images/my-background.png`.
+Hanni and the intro background are part of the fixed design and have no editable image fields in `content/intro.js`.
 
 ### Add a skill
 

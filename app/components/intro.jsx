@@ -19,9 +19,8 @@ export default function Intro() {
         background: '#68d2f0',
       }}
     >
-      {/* ✏️ EDIT THIS — Replace with your own hero background image */}
       <img
-        src={intro.backgroundImage}
+        src="/assets/images/2d72006bf90372214a62df811dc74063.jpg"
         alt=""
         style={{
           position: 'absolute',

@@ -1,10 +1,8 @@
 // INTRO: Change the text between quotes. Keep the commas and brackets.
-// Put image files in public/images and use a path like /images/my-photo.png.
 export const intro = {
-  name: "Yhvhan Suba",
-  role: "Fullstack Developer",
-  tagline: "More contributions on GitHub than in society",
-  bio: "Freelance developer and full-time tech side quest enthusiast",
-  tags: ["Frontend", "Backend", "Cloud", "IOTs", "AI"],
-  backgroundImage: "/assets/images/2d72006bf90372214a62df811dc74063.jpg",
+  name: "Hanni Bunny",
+  role: "UI/UX Designer",
+  tagline: "I design interfaces that feel like day one, every day.",
+  bio: "Five years of turning confusing screens into cozy, accessible experiences, with a soft spot for pixel art, playful motion and design systems that people actually enjoy using.",
+  tags: ["Based in Cloud City", "Open to freelance", "Figma · Prototyping · Research"],
 };

@@ -1,7 +1,7 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Hanni Bunny - UI/UX Designer Portfolio',
+  title: 'My first Portfolio',
   description: 'I design interfaces that feel like day one, every day.',
 };
 
