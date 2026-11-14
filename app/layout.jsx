@@ -1,7 +1,7 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'My first Portfolio',
+  title: 'SS&EG Portfolio',
   description: 'I design interfaces that feel like day one, every day.',
 };
 
