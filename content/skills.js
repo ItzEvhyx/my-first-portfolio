@@ -1,6 +1,5 @@
 // SKILLS: Change text in quotes. Copy an entire { ... }, line to add a skill.
 // Icon choices: design, layout, search, code, cloud, git, tools.
-// See /icons while the site is running for a visual guide.
 // Suggested maximum: 4 categories, 6 skills each; descriptions under 100 characters.
 
 export const categories = [

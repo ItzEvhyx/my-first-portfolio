@@ -3,6 +3,7 @@ import './globals.css';
 export const metadata = {
   title: 'SS&EG Portfolio',
   description: 'I design interfaces that feel like day one, every day.',
+  icons: { icon: '/assets/images/9fad891fec666c4c0e81ce9b00f539ab.png' },
 };
 
 export default function RootLayout({ children }) {
