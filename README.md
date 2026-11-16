@@ -55,7 +55,7 @@ Create a portfolio while learning how Git and GitHub work. You will create your 
 1. Sign in to GitHub and open the [starter repository](https://github.com/ItzEvhyx/my-first-portfolio).
 2. Select **Use this template** → **Create a new repository**.
 3. Choose your GitHub account as the owner, choose a name such as `my-portfolio`, and create the repository.
-4. You should now be on a repository whose URL starts with `github.com/YOUR-USERNAME/`.
+4. GitHub creates a new repository under your account containing the starter files. Its URL should start with `github.com/YOUR-USERNAME/`.
 
 Your repository is your own copy. Your changes and pushes will not change the starter. If **Use this template** is missing, ask a facilitator for help.
 
@@ -93,7 +93,7 @@ Open the project folder in your editor. Changes normally appear in the browser a
 
 ## 4. Personalize your portfolio ✏️
 
-Edit the JavaScript files in `content/`. The React components in `app/components/` display that content. You do not need to edit JSX for the workshop.
+To change the content displayed in your portfolio, edit the JavaScript files in the **`content/`** folder (the folder name is singular). These files hold your portfolio information. The React files in `app/components/` handle the user interface and display that information, so you do not need to edit them to personalize your content.
 
 | File | What to edit |
 | --- | --- |
