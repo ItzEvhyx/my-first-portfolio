@@ -9,6 +9,7 @@ import Projects from './components/projects';
 import EducationExperience from './components/educationExperience';
 import Contact from './components/contact';
 import Footer from './components/footer';
+import LazySection from './components/lazySection';
 
 /**
  * PortfolioPage — Main page component
@@ -39,6 +40,14 @@ export default function PortfolioPage() {
   const closeMenu = () => {
     if (menuRef.current) menuRef.current.checked = false;
   };
+
+  useEffect(() => {
+    // Enable smooth scrolling after initial render so redirect/load is immediately scrollable
+    const timer = setTimeout(() => {
+      document.documentElement.style.scrollBehavior = 'smooth';
+    }, 150);
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const root = rootRef.current;
@@ -202,7 +211,7 @@ export default function PortfolioPage() {
         background: '#f4fafd',
         fontFamily: "'Nunito', 'Trebuchet MS', sans-serif",
         color: '#0f3d5c',
-        overflowX: 'hidden',
+        overflowX: 'clip',
       }}
     >
       {/* SVG Pixel Definitions (used by Projects, Footer and cursor) */}
@@ -466,17 +475,29 @@ export default function PortfolioPage() {
           }}
         ></div>
 
-        <AboutMe />
-        <Skills />
-        <Projects />
-        <EducationExperience />
-        <Contact />
+        <LazySection>
+          <AboutMe />
+        </LazySection>
+        <LazySection>
+          <Skills />
+        </LazySection>
+        <LazySection>
+          <Projects />
+        </LazySection>
+        <LazySection>
+          <EducationExperience />
+        </LazySection>
+        <LazySection>
+          <Contact />
+        </LazySection>
       </div>
 
       {/* ═══════════════════════════════════════════════════════════════════════
           SECTION 3 — Footer
           ═══════════════════════════════════════════════════════════════════════ */}
-      <Footer />
+      <LazySection>
+        <Footer />
+      </LazySection>
 
       {/* ═══════════════════════════════════════════════════════════════════════
           SECTION 4 — Header (absolutely positioned on top)

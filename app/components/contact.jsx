@@ -38,8 +38,8 @@ export default function Contact() {
           </div>
 
           <div style={{ padding: '28px', borderRadius: '24px', background: '#ffffff' }}>
-            <p>Have a question or project in mind? Send me an email.</p>
-            <a href={`mailto:${contact.email}`} style={{ display: 'inline-block', padding: '12px 28px', borderRadius: '999px', background: '#cf3a6a', color: '#fff', textDecoration: 'none' }}>Send an email</a>
+            <p style={{ margin: 0 }}>Have a question or project in mind? Send me an email.</p>
+            <a href={`mailto:${contact.email}`} style={{ display: 'inline-block', marginTop: '20px', padding: '12px 28px', borderRadius: '999px', background: '#cf3a6a', color: '#fff', textDecoration: 'none' }}>Send an email</a>
           </div>
         </div>
       </div>

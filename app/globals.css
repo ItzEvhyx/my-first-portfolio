@@ -5,13 +5,62 @@
   --foreground: #0f3d5c;
 }
 
+/* ──────────────────────────────────────────────────────────────────────────────
+ * Hide scrollbars across all browsers while keeping scrolling active
+ * ────────────────────────────────────────────────────────────────────────────── */
+html,
+body,
+* {
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* IE and legacy Edge */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none !important; /* Chrome, Safari, Edge, Opera */
+  width: 0 !important;
+  height: 0 !important;
+}
+
+html {
+  overflow-x: clip;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────────
+ * Lazy Loading Scroll Reveal
+ * ────────────────────────────────────────────────────────────────────────────── */
+.lazy-section {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.lazy-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  will-change: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .lazy-section {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
   background: #f4fafd;
   color: #0f3d5c;
   font-family: 'Nunito', 'Trebuchet MS', sans-serif;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 .font-fredoka {

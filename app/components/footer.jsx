@@ -90,6 +90,7 @@ export default function Footer() {
             <img
               src="/assets/images/808f12872841f94ccc994cca0457c9bd.png"
               alt="Hanni the bunny mascot"
+              loading="lazy"
               style={{
                 position: 'relative',
                 height: '150px',
@@ -103,6 +104,7 @@ export default function Footer() {
           <img
             src="/assets/images/dcca05493962f89386c5ecf967cbe990.png"
             alt="It's always Day One logo"
+            loading="lazy"
             style={{ height: '66px', width: 'auto', display: 'block', marginBottom: '14px' }}
           />
         </div>
