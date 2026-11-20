@@ -8,6 +8,7 @@ export const education = [
 export const experience = [
     { date: '2024 - Present', title: 'Junior UI/UX Designer', org: 'StarHop Labs', desc: 'Design three product flows and maintain the shared component library.' },
     { date: '2023 - 2024', title: 'UI/UX Design Intern', org: 'Moonlight Studio', desc: 'Designed 20+ screens and ran 8 usability sessions.' },
+    { date: '2023 - 2024', title: 'UI/UX Design Intern', org: 'Moonlight Studio', desc: 'Designed 20+ screens and ran 8 usability sessions.' },
   ];
 
 export const certifications = [

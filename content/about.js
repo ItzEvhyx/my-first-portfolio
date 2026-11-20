@@ -17,4 +17,4 @@ export const highlights = [
     ['Professional aspiration', 'Senior AI Engineer, or Data Scientist'],
   ];
 
-export const aboutSection = { title: 'About Me', subtitle: 'Designer by day, weebo  by night.' };
+export const aboutSection = { title: 'About Me', subtitle: 'Developer by day, weebo  by night.' };
