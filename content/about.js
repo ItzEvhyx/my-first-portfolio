@@ -1,20 +1,20 @@
 // EDIT THIS FILE: Change text in quotes. To add an item, copy an existing item and keep its commas and brackets.
 
 export const details = [
-    ['Full name', 'Hanni Bunny'],
-    ['Background', 'Grew up in a burrow full of sketchbooks, then studied Interactive Design at Cloud City University.'],
-    ['Personal interests', 'Pixel art, baking carrot cake, collecting sticker sheets, night-sky photography.'],
+    ['Full name', 'Farhana Lardizabal'],
+    ['Background', '2nd Year BSCS Student in PUP'],
+    ['Personal interests', 'Anime, Games (Gacha games & RPGs), Math, Data Science, Sleeping.'],
     ['Professional interests', 'Design systems, accessibility, game-inspired interfaces and motion design.'],
-    ['Learning journey', 'Started with paper wireframes, moved to Figma, and now learns front-end basics and AWS fundamentals with the AWS Learning Club.'],
-    ['Career goals', 'Lead design on products that make people feel welcome on their first day.'],
-    ['Mission', 'Every first day should feel like a hello, not a hurdle.'],
+    ['Learning journey', 'Started with AWSSBG PUP as Senior Associate of Dept. of AI and built my skillset from there.'],
+    ['Career goals', 'Magkaroon ng pera and explore more of Tech'],
+    ['Mission', 'To be able to share my knowledge and improve as a builder'],
   ];
 
 export const highlights = [
-    ['Current focus', 'A design system for cloud learners'],
-    ['Main interest', 'Playful, accessible interfaces'],
-    ['Learning goal', 'AWS cloud fundamentals'],
-    ['Professional aspiration', 'Senior Product Designer'],
+    ['Current focus', 'To lead and share my knowledge and upskill as an Data Scientist and AI Engineer'],
+    ['Main interest', 'Anime - AveMyGo, Umamusume'],
+    ['Learning goal', 'AWS Cloud Fundamentals, Machine learning'],
+    ['Professional aspiration', 'Senior AI Engineer, or Data Scientist'],
   ];
 
-export const aboutSection = { title: 'About Me', subtitle: 'Designer by day, pixel collector by night.' };
+export const aboutSection = { title: 'About Me', subtitle: 'Developer by day, weebo  by night.' };

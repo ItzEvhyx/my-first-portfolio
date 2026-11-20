@@ -2,6 +2,6 @@
 
 // Add a full URL (starting with https://) to show a link.
 export const socials = [
-  { label: 'GitHub', href: '', pixelIcon: '#px-star', iconColor: '#ffb33d' },
-  { label: 'LinkedIn', href: '', pixelIcon: '#px-heart', iconColor: '#4aa8ff' },
+  { label: 'GitHub', href: 'https://github.com/HitsukiMok/', pixelIcon: '#px-star', iconColor: '#ffb33d' },
+  { label: 'LinkedIn', href: 'https://linkedin.com/in/farhanalardi/', pixelIcon: '#px-heart', iconColor: '#4aa8ff' },
 ];
